@@ -23,7 +23,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token=75d8e0c65f23"
+    "chromatic": "npx chromatic --project-token=75d8e0c65f23",
+    "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -54,13 +55,17 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^6.4.14",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
     "@storybook/node-logger": "^6.4.9",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.4.9",
+    "@storybook/testing-react": "^1.2.3",
     "chromatic": "^6.4.1",
+    "cypress": "^9.3.1",
+    "jest-axe": "^5.0.1",
     "msw": "^0.36.5",
     "msw-storybook-addon": "^1.6.0"
   },
